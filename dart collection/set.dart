@@ -1,5 +1,3 @@
-
-
 void main() {
   //Fixed Lenght List
   List<String> cityNames = List.filled(5, "");
@@ -28,10 +26,24 @@ void main() {
   // print("\nUsing foreach");
   // cityNames.forEach((element) => print(element));
 
-  List<String> countryNames = ["Bangladesh", "China", "USA"];
+  Set<String> countryNames = Set.from(["Bangladesh", "China", "USA"]);
 
   countryNames.add("Pakisthan");
   countryNames.add("Palisthin");
-  countryNames.remove("USA");
+  countryNames.add("Pakisthan");
+  countryNames.add("Pakisthan");
+  countryNames.add("Germany");
   print(countryNames.length);
+
+  Set<int> numbers = Set();
+  numbers.add(5);
+  numbers.add(10);
+  numbers.add(15);
+  numbers.add(20);
+  numbers.add(25);
+  numbers.add(30);
+  numbers.add(40);
+  for (var num in numbers) {
+    print(num);
+  }
 }
