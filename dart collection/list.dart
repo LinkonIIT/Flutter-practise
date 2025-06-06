@@ -33,5 +33,9 @@ void main() {
   countryNames.add("Pakisthan");
   countryNames.add("Palisthin");
   countryNames.remove("USA");
+ countryNames.remove("China");
+
+
+
   print(countryNames.length);
 }
